@@ -35,17 +35,12 @@
 
         /* Instructions Overlay */
         .controls-hint {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 20px;
             background: rgba(0, 0, 0, 0.6);
             color: white;
             padding: 10px 20px;
             border-radius: 50px;
             font-size: 14px;
-            pointer-events: none; /* Allows clicks to pass through to the model */
-            transition: opacity 0.5s;
         }
     </style>
 </head>
@@ -65,12 +60,11 @@
             auto-rotate 
             touch-action="pan-y"
             alt="A 3D model from Autodesk Inventor">
-            
-            <div class="controls-hint">
-                🖱️ Left Click: Rotate | 🖱️ Right Click: Pan | ⚙️ Scroll: Zoom
-            </div>
-
         </model-viewer>
+    </div>
+
+    <div class="controls-hint">
+        🖱️ Left Click: Rotate | 🖱️ Right Click: Pan | ⚙️ Scroll: Zoom
     </div>
 
     <footer style="margin-top: 20px; color: #888;">
